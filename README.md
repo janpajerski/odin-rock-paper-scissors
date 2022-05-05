@@ -17,7 +17,7 @@ The game is a two player "duel". In each round, both players draw rock, paper or
 <h1>Make a Plan</h1>
 I am foregoing to Odin project instructions to see if I can complete this thinking on my own. Obviously, the function names will likely be a little different.
 <h2>Questions</h2>
-<h3>Is there a user interface?<h3>
+<h3>Is there a user interface?</h3>
 No.
 <h3>What inputs will the program have?</h3>
 - A user input each round: rock, paper, or scissors.
