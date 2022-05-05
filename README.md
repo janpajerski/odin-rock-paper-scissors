@@ -19,7 +19,7 @@ I am foregoing to Odin project instructions to see if I can complete this thinki
 <h2>Questions</h2>
 <h3>Is there a user interface?<h3>
 No.
-<h3>>What inputs will the program have?</h3>
+<h3>What inputs will the program have?</h3>
 - A user input each round: rock, paper, or scissors.
 - A computer generated input each round: rock, paper, or scissors.
 <h3>What is the desired output?</h3>
