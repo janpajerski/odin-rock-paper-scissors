@@ -29,7 +29,7 @@ I am foregoing to Odin project instructions to see if I can complete this thinki
 - The updated score after each round.<br>
 - The winner of the game after five rounds.<br>
 <h3>Given the inputs, what are the steps necessary to return the desired output, or another way, what are the sub-problems that need to be solved?</h3>
-In no particular order:
+In no particular order:<br>
 - How to randomly generate rock, paper, or scissors? <br>
 - How to ask the user to enter rock, paper, or scissors? <br>
 - How to compare the computer generated value to the user entry to determine a winner for the round? <br>
@@ -38,8 +38,8 @@ In no particular order:
 - How to group the above problems into functions?
 
 <h2>Approach</h2>
-Since we haven't used loops to this point, I will use recursion only and use totalScore === 5 as the 'exit' condition.
-I'm thinking three functions:
+<p>Since we haven't used loops to this point, I will use recursion only and use totalScore === 5 as the 'exit' condition.</p>
+I'm thinking three functions:<br>
 - rockPaperScissors encompasses the preamble game play and resetting if the user wants to play again. <br>
 - fiveRoundGame is game play <br>
 - computerSelection is the random "rock, paper, or scissors" generator
