@@ -12,6 +12,8 @@ In short, the process is:
 <h1>Understand the Problem</h1>
 Make a simple implementation of rock paper scissors where the player plays against the computer from the console. The game will be five rounds. After each round, the winner and loser for the round are declared. The score is kept and a winner is declared after five rounds.
 
+NOTE: 5 rounds doesn't make sense to me. It should be the first to 3, to 5, etc. It looks like this will be addressed later when we revisit the project later in the course.
+
 The game is a two player "duel". In each round, both players draw rock, paper or scissors. Rock beats scissors, paper beats rock, and scissors beat paper. 
 
 <h1>Make a Plan</h1>
@@ -28,7 +30,20 @@ No.
 - The winner of the game after five rounds.
 <h3>Given the inputs, what are the steps necessary to return the desired output, or another way, what are the sub-problems that need to be solved?</h3>
 In no particular order:
-- Randomly generate rock, paper, or scissors by the computer?
+- How to randomly generate rock, paper, or scissors?
+- How to ask the user to enter rock, paper, or scissors?
+- How to compare the computer generated value to the user entry to determine a winner for the round?
+- How to output the winner and score after each round?
+- How to output the winner of the game after 5 rounds?
+- How to group the above problems into functions?
+<h3>Approach</h3>
+Since we haven't used loops to this point, I will use recursion only and use totalScore === 5 as the 'exit' condition. 
+
+I'm thinking three functions: 
+- rockPaperScissors encompasses the preamble game play and resetting if the user wants to play again. 
+- fiveRoundGame is game play
+- computerSelection is the random "rock, paper, or scissors" generator
+
 
 
 
