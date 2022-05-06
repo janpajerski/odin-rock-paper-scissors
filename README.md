@@ -1,20 +1,20 @@
 # odin-rock-paper-scissors
 
-This is my first JavaScrip project built from scratch and is part of the Odin Project. I am using this readme file to record my project notes and my thought process. I learned about how programmers think and problem solve (at least how you should) and I will follow the process pretty rigidly so it gets ingrained. Bear with me here, as it's probably overkill given the level of difficult :)
+<p>This is my first JavaScrip project built from scratch and is part of the Odin Project. I am using this readme file to record my project notes and my thought process. I learned about how programmers think and problem solve (at least how you should) and I will follow the process pretty rigidly so it gets ingrained. Bear with me here, as it's probably overkill given the level of difficulty :)</p>
 
-In short, the process is:
+<p>In short, the process is:
 <ol> 
     <li>Understand the problem</li>
     <li>Make a Plan</li>
     <li>Implement</li>
-</ol>
+</ol></p>
 
 <h1>Understand the Problem</h1>
-Make a simple implementation of rock paper scissors where the player plays against the computer from the console. The game will be five rounds. After each round, the winner and loser for the round are declared. The score is kept and a winner is declared after five rounds.
+<p>Make a simple implementation of rock paper scissors where the player plays against the computer from the console. The game will be five rounds. After each round, the winner and loser for the round are declared. The score is kept and a winner is declared after five rounds.</p>
 
-NOTE: 5 rounds doesn't make sense to me. It should be the first to 3, to 5, etc. It looks like this will be addressed later when we revisit the project later in the course.
+<p>NOTE: 5 rounds doesn't make sense to me. It should be the first to 3, to 5, etc. It looks like this will be addressed later when we revisit the project later in the course.</p>
 
-The game is a two player "duel". In each round, both players draw rock, paper or scissors. Rock beats scissors, paper beats rock, and scissors beat paper. 
+<p>The game is a two player "duel". In each round, both players draw rock, paper or scissors. Rock beats scissors, paper beats rock, and scissors beat paper.</p>
 
 <h1>Make a Plan</h1>
 I am foregoing to Odin project instructions to see if I can complete this thinking on my own. Obviously, the function names will likely be a little different.
@@ -36,7 +36,7 @@ In no particular order:
 - How to output the winner and score after each round?
 - How to output the winner of the game after 5 rounds?
 - How to group the above problems into functions?
-<h3>Approach</h3>
+<h2>Approach</h2>
 Since we haven't used loops to this point, I will use recursion only and use totalScore === 5 as the 'exit' condition. 
 
 I'm thinking three functions: 
