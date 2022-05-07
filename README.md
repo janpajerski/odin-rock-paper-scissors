@@ -49,6 +49,7 @@ I'm thinking three functions:
 
 ## Pseudocode
 
+```
 function computerSelection {
     randint = randomly generate a number between 1 and 3
     switch (randint)
@@ -57,14 +58,14 @@ function computerSelection {
         case 3: return 'scissors'; break;
 }
 
-function fiveRounds {roundNum, compScore, playerScore}<br>
-    if roundNum < 5;<br>
-        Output the round number. <br>
-        get userInput of either rock, paper, or scissors<br>
-            If input is incorrect, ask to reenter input<br>
-        make sure input is all lower case<br>
-        compInput === call randInt() to generate computer input<br>
-        if userInput === compInput<br>
+function fiveRounds {roundNum, compScore, playerScore}
+    if roundNum < 5;
+        Output the round number.
+        get userInput of either rock, paper, or scissors
+            If input is incorrect, ask to reenter input
+        make sure input is all lower case
+        compInput === call randInt() to generate computer input
+        if userInput === compInput
             roundNum++;<br>
             Output "it's a tie, you both drew -----"<br>
             Output "The score is you # - # computer"<br>
@@ -102,6 +103,7 @@ function rockPaper {
 }
 
 rockPaper()
+```
 
 <h1>Implement</h1>
 <p>Remember to divide and conquer!!!</p>
