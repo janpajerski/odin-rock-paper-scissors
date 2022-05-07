@@ -1,20 +1,18 @@
 # odin-rock-paper-scissors
 
-<p>This is my first JavaScrip project built from scratch and is part of the Odin Project. I am using this readme file to record my project notes and my thought process. I learned about how programmers think and problem solve (at least how you should) and I will follow the process pretty rigidly so it gets ingrained. Bear with me here, as it's probably overkill given the level of difficulty :)</p>
+This is my first JavaScrip project built from scratch and is part of the Odin Project. I am using this readme file to record my project notes and my thought process. I learned about how programmers think and problem solve (at least how you should) and I will follow the process pretty rigidly so it gets ingrained. Bear with me here, as it's probably overkill given the level of difficulty :)
 
-<p>In short, the process is:
-<ol> 
-    <li>Understand the problem</li>
-    <li>Make a Plan</li>
-    <li>Implement</li>
-</ol></p>
+In short, the process is:
+- Understand the problem
+- Make a Plan
+- Implement
 
-<h1>Understand the Problem</h1>
-<p>Make a simple implementation of rock paper scissors where the player plays against the computer from the console. The game will be five rounds. After each round, the winner and loser for the round are declared. The score is kept and a winner is declared after five rounds.</p>
+# Understand the Problem
+Make a simple implementation of rock paper scissors where the player plays against the computer from the console. The game will be five rounds. After each round, the winner and loser for the round are declared. The score is kept and a winner is declared after five rounds.
 
-<p>NOTE: 5 rounds doesn't make sense to me. It should be the first to 3, to 5, etc. It looks like this will be addressed later when we revisit the project later in the course.</p>
+NOTE: 5 rounds doesn't make sense to me. It should be the first to 3, to 5, etc. It looks like this will be addressed later when we revisit the project later in the course.
 
-<p>The game is a two player "duel". In each round, both players draw rock, paper or scissors. Rock beats scissors, paper beats rock, and scissors beat paper.</p>
+The game is a two player "duel". In each round, both players draw rock, paper or scissors. Rock beats scissors, paper beats rock, and scissors beat paper.
 
 <h1>Make a Plan</h1>
 I am foregoing to Odin project instructions to see if I can complete this thinking on my own. Obviously, the function names will likely be a little different.
@@ -46,38 +44,38 @@ I'm thinking three functions:<br>
 
 <h2>Pseudocode</h2>
 
-function computerSelection {
-    randint = randomly generate a number between 1 and 3
-    switch (randint)
-        case 1: return 'rock'; break;
-        case 2: return 'paper'; break;
-        case 3: return 'scissors'; break;
-}
+function computerSelection { <br>
+    randint = randomly generate a number between 1 and 3<br>
+    switch (randint)<br>
+        case 1: return 'rock'; break;<br>
+        case 2: return 'paper'; break;<br>
+        case 3: return 'scissors'; break;<br>
+}<br>
 
-function fiveRounds {roundNum, compScore, playerScore}
-    if roundNum < 5;
-        Output the round number. 
-        get userInput of either rock, paper, or scissors
-            If input is incorrect, ask to reenter input
-        make sure input is all lower case
-        compInput === call randInt() to generate computer input
-        if userInput === compInput
-            roundNum++;
-            Output "it's a tie, you both drew -----"
-            Output "The score is you # - # computer"
-            Call function fiveRounds(roundNum,compScore,playerScore)
-        elseif ((userInput === rock && compInput === scissors) OR
-               (userInput === paper && compInput === rock) OR
-               (userInput === scissors && compInput == paper))
-            roundNum++;
-            playerScore++
-            Output "User drew --- and comp dres ---. User wins!
-            Output "The score is you # - # computer"
-            Call function fiveRounds(roundNum,compScore, playerScore)
-        elseif ((compInput === rock && userInput === scissors) OR
-               (compInput === paper && userInput === rock) OR
-               (compInput === scissors && userInput == paper))
-            roundNum++;
+function fiveRounds {roundNum, compScore, playerScore}<br>
+    if roundNum < 5;<br>
+        Output the round number. <br>
+        get userInput of either rock, paper, or scissors<br>
+            If input is incorrect, ask to reenter input<br>
+        make sure input is all lower case<br>
+        compInput === call randInt() to generate computer input<br>
+        if userInput === compInput<br>
+            roundNum++;<br>
+            Output "it's a tie, you both drew -----"<br>
+            Output "The score is you # - # computer"<br>
+            Call function fiveRounds(roundNum,compScore,playerScore)<br>
+        elseif ((userInput === rock && compInput === scissors) OR<br>
+               (userInput === paper && compInput === rock) OR<br>
+               (userInput === scissors && compInput == paper))<br>
+            roundNum++;<br>
+            playerScore++<br>
+            Output "User drew --- and comp dres ---. User wins!<br>
+            Output "The score is you # - # computer"<br>
+            Call function fiveRounds(roundNum,compScore, playerScore)<br>
+        elseif ((compInput === rock && userInput === scissors) OR<br>
+               (compInput === paper && userInput === rock) OR<br>
+               (compInput === scissors && userInput == paper))<br>
+            roundNum++;<br>
             compScore++
             Output "User drew --- and comp dres ---. Computer wins!
             Output "The score is you # - # computer"
