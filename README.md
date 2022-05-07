@@ -3,9 +3,9 @@
 This is my first JavaScrip project built from scratch and is part of the Odin Project. I am using this readme file to record my project notes and my thought process. I learned about how programmers think and problem solve (at least how you should) and I will follow the process pretty rigidly so it gets ingrained. Bear with me here, as it's probably overkill given the level of difficulty :)
 
 In short, the process is:
-- Understand the problem
-- Make a Plan
-- Implement
+1. Understand the problem
+2. Make a Plan
+3. Implement
 
 # Understand the Problem
 Make a simple implementation of rock paper scissors where the player plays against the computer from the console. The game will be five rounds. After each round, the winner and loser for the round are declared. The score is kept and a winner is declared after five rounds.
@@ -14,10 +14,11 @@ NOTE: 5 rounds doesn't make sense to me. It should be the first to 3, to 5, etc.
 
 The game is a two player "duel". In each round, both players draw rock, paper or scissors. Rock beats scissors, paper beats rock, and scissors beat paper.
 
-<h1>Make a Plan</h1>
+# Make a Plan
 I am foregoing to Odin project instructions to see if I can complete this thinking on my own. Obviously, the function names will likely be a little different.
-<h2>Questions</h2>
-<h3>Is there a user interface?</h3>
+
+## Questions
+### Is there a user interface?
 - No.
 <h3>What inputs will the program have?</h3>
 - A user input each round: rock, paper, or scissors. <br>
