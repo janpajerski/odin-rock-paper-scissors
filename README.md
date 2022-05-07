@@ -46,7 +46,62 @@ I'm thinking three functions:<br>
 
 <h2>Pseudocode</h2>
 
+function computerSelection {
+    randint = randomly generate a number between 1 and 3
+    switch (randint)
+        case 1: return 'rock'; break;
+        case 2: return 'paper'; break;
+        case 3: return 'scissors'; break;
+}
 
+function fiveRounds {roundNum, compScore, playerScore}
+    if roundNum < 5;
+        Output the round number. 
+        get userInput of either rock, paper, or scissors
+            If input is incorrect, ask to reenter input
+        make sure input is all lower case
+        compInput === call randInt() to generate computer input
+        if userInput === compInput
+            roundNum++;
+            Output "it's a tie, you both drew -----"
+            Output "The score is you # - # computer"
+            Call function fiveRounds(roundNum,compScore,playerScore)
+        elseif ((userInput === rock && compInput === scissors) OR
+               (userInput === paper && compInput === rock) OR
+               (userInput === scissors && compInput == paper))
+            roundNum++;
+            playerScore++
+            Output "User drew --- and comp dres ---. User wins!
+            Output "The score is you # - # computer"
+            Call function fiveRounds(roundNum,compScore, playerScore)
+        elseif ((compInput === rock && userInput === scissors) OR
+               (compInput === paper && userInput === rock) OR
+               (compInput === scissors && userInput == paper))
+            roundNum++;
+            compScore++
+            Output "User drew --- and comp dres ---. Computer wins!
+            Output "The score is you # - # computer"
+            Call function fiveRounds(roundNum, compScore, playerScore)
+        else
+            return compScore, playerScore;
+}
+
+function rockPaper {
+    call function fiveRounds and return compScore and playerScore
+    if compScore > playerScore
+        output 'Computer wins!: compScore - playerScore'
+    elseif playerScore > compScore
+        output 'Player wins! playerScore - compScore'
+    else 'It's a tie. playerScore - compScore'
+    Ask Do you want to play again?
+        If yes rockPaper()
+        if not return 'Thanks for playing'
+}
+
+rockPaper()
+
+<h1>Implement</h1>
+<p>Remember to divide and conquer!!!</p>
 
 
 
