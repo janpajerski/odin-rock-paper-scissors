@@ -58,7 +58,7 @@ function computerSelection {
         case 3: return 'scissors'; break;
 }
 
-function fiveRounds {roundNum, compScore, playerScore}
+function fiveRounds (roundNum, compScore, playerScore){
     if roundNum < 5;
         Output the round number.
         get userInput of either rock, paper, or scissors
@@ -67,21 +67,21 @@ function fiveRounds {roundNum, compScore, playerScore}
         compInput === call randInt() to generate computer input
         if userInput === compInput
             roundNum++;<br>
-            Output "it's a tie, you both drew -----"<br>
-            Output "The score is you # - # computer"<br>
-            Call function fiveRounds(roundNum,compScore,playerScore)<br>
-        elseif ((userInput === rock && compInput === scissors) OR<br>
-               (userInput === paper && compInput === rock) OR<br>
-               (userInput === scissors && compInput == paper))<br>
+            Output "it's a tie, you both drew -----"
+            Output "The score is you # - # computer"
+            Call function fiveRounds(roundNum,compScore,playerScore)
+        elseif ((userInput === rock && compInput === scissors) OR
+               (userInput === paper && compInput === rock) OR
+               (userInput === scissors && compInput == paper))
             roundNum++;<br>
             playerScore++<br>
-            Output "User drew --- and comp dres ---. User wins!<br>
+            Output "User drew --- and comp dres ---. User wins!
             Output "The score is you # - # computer"<br>
-            Call function fiveRounds(roundNum,compScore, playerScore)<br>
-        elseif ((compInput === rock && userInput === scissors) OR<br>
-               (compInput === paper && userInput === rock) OR<br>
-               (compInput === scissors && userInput == paper))<br>
-            roundNum++;<br>
+            Call function fiveRounds(roundNum,compScore, playerScore)
+        elseif ((compInput === rock && userInput === scissors) OR
+               (compInput === paper && userInput === rock) OR
+               (compInput === scissors && userInput == paper)
+            roundNum++;
             compScore++
             Output "User drew --- and comp dres ---. Computer wins!
             Output "The score is you # - # computer"
