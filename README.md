@@ -105,8 +105,8 @@ function rockPaper {
 rockPaper()
 ```
 
-<h1>Implement</h1>
-<p>Remember to divide and conquer!!!</p>
+# Implement
+Remember to divide and conquer!!!
 
 
 
