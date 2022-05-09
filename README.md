@@ -113,7 +113,19 @@ This is simple enough so there's no need to separate into smaller steps.
 Used Math.floor and Math.random() to generate a number between 1 and 3.
 Used a switch statement to return rock, paper or scissors, based on the generated number.
 
+### fiveRounds function
+I will break down this function into smaller problems.
 
+**Recursive function call**
+My approach to the fiveRounds function relies on a recursive function call so the first *small problem* I'm going to solve is getting this to work.
+
+I ran into a roadblock as the function returned undefined. I found out that all calls of the function must return something, even when you're simply calling the function itself. I made the modification and the recursive function call works.
+
+**Get user input**
+This can be broken down into a few smaller parts
+- Change input to lower case.
+- Validate that user input is rock, paper, or scissors
+    - If not, ask user to re-enter input
 
 
 

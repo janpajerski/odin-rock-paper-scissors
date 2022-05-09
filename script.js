@@ -11,3 +11,13 @@ function computerSelection(){
     }
 
 }
+
+function fiveRounds(roundNum){
+    if (roundNum < 5) {
+        roundNum++;
+        return fiveRounds(roundNum);
+    } else {
+        return 'We\'re out after ' + roundNum + ' rounds!';
+    }
+
+}
