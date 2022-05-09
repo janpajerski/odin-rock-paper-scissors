@@ -108,5 +108,12 @@ rockPaper()
 # Implement
 Remember to divide and conquer!!!
 
+### computerSelection function
+This is simple enough so there's no need to separate into smaller steps. 
+Used Math.floor and Math.random() to generate a number between 1 and 3.
+Used a switch statement to return rock, paper or scissors, based on the generated number.
+
+
+
 
 
