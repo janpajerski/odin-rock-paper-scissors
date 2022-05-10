@@ -21,3 +21,15 @@ function fiveRounds(roundNum){
     }
 
 }
+
+function userPick(){
+    let userInput = prompt('Make your pick: rock, paper, or scissors!').trim().toLowerCase();
+    // Make sure input is spelled correctly
+    if(['rock', 'paper', 'scissors'].includes(userInput)){
+        return userInput;
+    } else {
+        alert('Incorrect input. Please try again.');
+        return userPick();
+    }
+
+}
