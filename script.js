@@ -1,4 +1,4 @@
-function computerSelection(){
+function computerPick(){
     switch (Math.floor(Math.random() * 3) + 1){
         case 1:
             return 'rock';
@@ -12,10 +12,18 @@ function computerSelection(){
 
 }
 
-function fiveRounds(roundNum){
-    if (roundNum < 5) {
-        roundNum++;
-        return fiveRounds(roundNum);
+function fiveRounds(roundNum, compScore, userScore){
+    console.log('This is round', roundNum);
+    roundNum++;
+    if (roundNum < 6) {
+        let userInput = userPick();
+        let compInput = computerPick();
+        // console.log('You picked: ', userInput, 'The computer picked: ', compInput)
+        if (userInput === compInput){
+            console.log('It\'s a tie, you both drew: ', userInput);
+            console.log('The score is you ', userScore, ' - ', compScore, ' computer.');
+            return fiveRounds(roundNum, compScore, userScore);
+        } else {return fiveRounds(roundNum, compScore, userScore);}
     } else {
         return 'We\'re out after ' + roundNum + ' rounds!';
     }

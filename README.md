@@ -66,7 +66,7 @@ function fiveRounds (roundNum, compScore, playerScore){
         make sure input is all lower case
         compInput === call randInt() to generate computer input
         if userInput === compInput
-            roundNum++;<br>
+            roundNum++;
             Output "it's a tie, you both drew -----"
             Output "The score is you # - # computer"
             Call function fiveRounds(roundNum,compScore,playerScore)
@@ -128,11 +128,11 @@ I've broken this into a few smaller parts
     - [x] If not, ask user to re-enter input
 
 **Assemble the function**
-- [ ] consol.log the round number
-- [ ] Call computerSelection function and assign output to variable
-- [ ] Call playerSelections function and assign output to variable
+- [x] consol.log the round number
+- [x] Call computerSelection function and assign output to variable
+- [x] Call playerSelections function and assign output to variable
 - [ ] Determine the round winner based on the computer and player selections, updated the score, and output the appropriate messages
-    - [ ] Tie
+    - [X] Tie
     - [ ] Computer wins
     - [ ] Player wins
 
