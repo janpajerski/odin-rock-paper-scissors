@@ -139,7 +139,7 @@ I've broken this into a few smaller parts
 Done! The game is working in the console. 
 
 # Compare to TOP 
-TOP provided guidance along the way, whereas I wrote the game from scratch. I will compare my approach to the approach suggested by TOP.
+TOP provided guidance along the way, whereas I wrote the game from scratch. I will compare my approach to the approach suggested by TOP and write a new 'TOP' version of the game which is in topScript.js.
 
 
 
