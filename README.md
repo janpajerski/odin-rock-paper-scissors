@@ -131,8 +131,15 @@ I've broken this into a few smaller parts
 - [x] consol.log the round number
 - [x] Call computerSelection function and assign output to variable
 - [x] Call playerSelections function and assign output to variable
-- [ ] Determine the round winner based on the computer and player selections, updated the score, and output the appropriate messages
-    - [X] Tie
-    - [ ] Computer wins
-    - [ ] Player wins
+- [x] Determine the round winner based on the computer and player selections, updated the score, and output the appropriate messages
+    - [x] Tie
+    - [x] Computer wins
+    - [x] Player wins
+
+Done! The game is working in the console. 
+
+# Compare to TOP 
+TOP provided guidance along the way, whereas I wrote the game from scratch. I will compare my approach to the approach suggested by TOP.
+
+
 
