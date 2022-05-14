@@ -15,7 +15,7 @@ NOTE: 5 rounds doesn't make sense to me. It should be the first to 3, to 5, etc.
 The game is a two player "duel". In each round, both players draw rock, paper or scissors. Rock beats scissors, paper beats rock, and scissors beat paper.
 
 # Make a Plan
-I am foregoing to Odin project instructions to see if I can complete this thinking on my own. Obviously, the function names will likely be a little different.
+I am foregoing the Odin project instructions to see if I can complete this thinking on my own. Obviously, the function names will likely be a little different.
 
 ## Questions
 ### Is there a user interface?
