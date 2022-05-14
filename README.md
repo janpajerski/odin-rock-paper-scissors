@@ -139,7 +139,17 @@ I've broken this into a few smaller parts
 Done! The game is working in the console. 
 
 # Compare to TOP 
-TOP provided guidance along the way, whereas I wrote the game from scratch. I will compare my approach to the approach suggested by TOP and write a new 'TOP' version of the game which is in topScript.js.
+The above notes were from writing the game from scratch. TOP provided guidance so I then followed their guided approach. My code is in script.js and the code following TOP's guidance is in odin-script.js.
+
+The main differences between the TOP guided version and my own are:
+1. In my version, I used recursion to play five rounds, while TOPs version used a loop. 
+2. TOPs version has a 'game' function that calls each 'round' and returns an output message --> the scores are updated and winner is determined from within the game function. My version has a 'game' function that calls a five round play and returns the final scores --> the game function outputs messages based on the scores. 
+
+Both approaches work, underscoring how there are many ways to arrive at a solution and many solutions to a problem. Stylistically, I think that the top version is 'better'...whatever that means. 
+
+What a great exercise! It was fun.
+
+
 
 
 
