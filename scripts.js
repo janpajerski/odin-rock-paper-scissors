@@ -1,5 +1,15 @@
+"use strict";
+
 function getComputerChoice(){
-    let randomNum = "";
-    randomNum = Math.random();
-    return(randomNum);
+    let computerChoice ="";
+    let randomNum = Math.random();
+    if (randomNum < 1/3){
+        computerChoice = "rock";
+    } else if (randomNum < 2/3) {
+        computerChoice = "paper";
+    } else {
+        computerChoice = "scissors";
+    }
+
+    return(computerChoice);
 }
