@@ -13,3 +13,9 @@ function getComputerChoice(){
 
     return(computerChoice);
 }
+
+function getHumanChoice(){
+    let humanChoice = prompt("Please enter your choice—rock, paper, or scissors: ");
+    
+    return(humanChoice);
+}
