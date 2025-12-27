@@ -1,1 +1,5 @@
-console.log("Hello World from separate file.")
+function getComputerChoice(){
+    let randomNum = "";
+    randomNum = Math.random();
+    return(randomNum);
+}
