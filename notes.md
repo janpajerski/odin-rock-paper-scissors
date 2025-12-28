@@ -49,5 +49,38 @@ The big problem here isn't that big so there only a few *obvious* sub-problems.
 The problem here is really a sub-problem. How do you prompt the user to enter a string value? Once you figure that out, simply assign the value to the `humanChoice` variable and return that variable.
 
 ## Step 4: Declare the players score variables
-
 This is as simpole as it gets. Literally declare two variables, `humanScore` and `computerScore` and initialize them with a value of `0`. 
+
+## Step 5: Write teh logic to play a single round
+1. Understand the problem
+    - Write a function that takes human and computer choices as arguments, plays a single round of "rock, paper, scissors", increments the round winners score and logs a winner announcement.
+2. Plan
+    - Does this function have a user interface?
+        -  No. Other functions generate the arguments and the console is used for output.
+    - What inputs will the function have?
+        - `humanChoice`, which is the output of the function `getHumanChoice`
+        - `computerChoice`, which is the output of the function `getComputerChoice`
+    - What is the desired output?
+        - The winner of one round of rock, paper, scissors between the player (human) and the computer.
+    - What are other relevant requirements and constraints?
+        - Make the `humanChoice` functions parameter case-inseensitive so that players can input "rock", "ROCK", "RocK", or other variations.
+        - Make three variations of messages for the three possible outcomes: the player wins, the player loses, it is a tie. 
+            - "You win! Rock beats Scissors."
+            - "You loose! Paper beats Rock."
+            - "It's a tie! You both chose Rock."
+        - Increment the humanScore or computerScore variables based on the round winner.
+    - What are the steps necessary to achieve the desired outputs?
+        - Call function `playRound` with two arguments `humanChoice` and `computerChoice` representing the choice each player makes in a game of rock, paper, scissors.
+        - Declare variable `roundMessage` of type String and value `""`.
+        - If `humanChoice` is "rock" AND `computerChoice` is "scissors" OR `humanChoice` is "paper" AND `computerChoice` is "rock" OR `humanChoice` is "scissors" AND `computerChoice` is "paper"
+            `roundMessage` equals "You win! `humanChoice` beats `computerChoice`."
+            `humanScore` equals `humanScore` plus `1`
+        else if `computerChoice` is "rock" AND `humanChoice` is "scissors" OR `computerChoice` is "paper" AND `humanChoice` is "rock" OR `computerChoice` is "scissors" AND `humanChoice` is "paper"
+            `roundMessage` equals "You loose! `computerChoice` beats `humanChoice`."
+            `computerScore` equals `computerScore` plus `1`
+        else `roundMessage` equals "It's a tie! You both chose `humanChoice`."
+        - output `roundMessage` to the console
+
+
+
+    
