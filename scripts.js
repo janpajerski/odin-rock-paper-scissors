@@ -54,9 +54,9 @@ function playRound(humanChoice, computerChoice){
     }
 }
 
-// Play five rounds of Rock, Paper, Scissors. Output the final score and declare the winner, or a tie.
+// Using recursion, play five rounds of Rock, Paper, Scissors. Output the final score and declare the winner, or a tie.
 
-function playGame(){
+/* function playGame(){
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice);
@@ -67,9 +67,31 @@ function playGame(){
         if (humanScore > computerScore){
             console.log('Congratulations! You win!!');
         } else if (computerScore > humanScore){
-            console.log(`Tough break, you loose :(`)
+            console.log(`Tough break, you loose :(`);
         } else {
-            console.log(`Great battle, it finished in a tie!`)
+            console.log(`Great battle, it finished in a tie!`);
         }
+    }
+} */
+
+// Using a for loop, as shown in the problem solving Fizz Buss example, play five rounds of Rock, Paper, Scissors. Output the final score and declare the winner, or a tie.
+
+function playGame(){
+
+    // Play five rounds of Rock, Paper, Scissors
+    for (let i = 1; i <= 5; i++){
+        const humanChoice = getHumanChoice();
+        const computerChoice = getComputerChoice();
+        playRound(humanChoice, computerChoice);
+    }
+
+    // Ouput the final score and declare a winner, or tie, after all five rounds
+    console.log(`The final score after ${roundCount} rounds: You - ${humanScore}, Computer - ${computerScore}`);
+    if (humanScore > computerScore){
+        console.log('Congratulations! You win!!');
+    } else if (computerScore > humanScore){
+        console.log(`Tough break, you loose :(`);
+    } else {
+        console.log(`Great battle, it finished in a tie!`);
     }
 }
