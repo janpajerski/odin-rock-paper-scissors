@@ -1,5 +1,9 @@
 "use strict";
 
+// Initialize Global Variables to track player and computer scores
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice(){
     let computerChoice ="";
     let randomNum = Math.random();
@@ -19,3 +23,6 @@ function getHumanChoice(){
     
     return(humanChoice);
 }
+
+
+

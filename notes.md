@@ -1,6 +1,8 @@
 # Project Notes
 
-I will use this file for project notes. Since I'm just learning, I will explicitly go through the probelem solving steps as outlined in The Odin Project. 
+I will use this file for project notes. Since I'm just learning, I will explicitly go through the problem solving steps as outlined in The Odin Project.
+
+It's worth noting that the project instructions break the proble (creating a rock, paper, scissors game where the user plays against the commputer) into small problems which are the steps in the instructions. I attempt to break down these small problems into even smaller problems to practice the problem solving process. Admittedly I'm stretching things a bit as the small problems are already pretty bite sized. All good though!!
 
 ## Step 2: Write the logic to get the computer choice.
 1. Understand the Problem
@@ -46,3 +48,6 @@ The big problem here isn't that big so there only a few *obvious* sub-problems.
 
 The problem here is really a sub-problem. How do you prompt the user to enter a string value? Once you figure that out, simply assign the value to the `humanChoice` variable and return that variable.
 
+## Step 4: Declare the players score variables
+
+This is as simpole as it gets. Literally declare two variables, `humanScore` and `computerScore` and initialize them with a value of `0`. 
