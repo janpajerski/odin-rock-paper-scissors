@@ -106,7 +106,13 @@ This is as simpole as it gets. Literally declare two variables, `humanScore` and
 3. Divide and conquer
 Things have already been broken down into smaller problems. I'm simply going to tackle `playGame`. 
             
+# Final Reflection
+The project was very fun and went smoothly. It gave me an opportunity to practice the JavaScript concepts that we have covered up until now in the course.
 
+It was straighforward as the Problem Solving was outlined for us in the six steps. Good practice as it showed how to break down a large problem,
+> Create a game of rock, paper, scissors played entirely in the console.
+into small steps and then tackle each step one at a time, then put it all together. 
 
+In the future I'm sure our hands won't be held like they were here. All good! I can't wait for the challenge!
 
     
