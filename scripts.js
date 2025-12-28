@@ -4,6 +4,8 @@
 let humanScore = 0;
 let computerScore = 0;
 
+
+// Randomly generate the computer selection of Rock, Paper or Scissors
 function getComputerChoice(){
     let computerChoice ="";
     let randomNum = Math.random();
@@ -18,13 +20,14 @@ function getComputerChoice(){
     return(computerChoice);
 }
 
+// Get the players selection of Rock, Paper, or Scissors. The player input is case insensitive; however, the assumption is that the input is correctly spelled.
 function getHumanChoice(){
     let humanChoice = prompt("Please enter your choice—Rock, Paper, or Scissors: ");
     
     return(humanChoice[0].toUpperCase().concat(humanChoice.slice(1).toLowerCase()));
 }
 
-// Call function `playRound` with two arguments `humanChoice` and `computerChoice` representing the choice each player makes in a game of rock, paper, scissors.
+// Play one round of "Rock, Paper, Scissors" with `humanChoice` and `computerChoice` representing the choice each players choice. 
 function playRound(humanChoice, computerChoice){
     // Declare variable `roundMessage` of type String and empty.
     let roundMessage = "";
