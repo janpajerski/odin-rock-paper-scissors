@@ -30,10 +30,10 @@ function playRound(humanChoice, computerChoice){
     let roundMessage = "";
 
     // Outline conditions for the human winner, computer winner and a tie and pass the message to roundMessage.
-    if (humanChoice === "rock" && computerChoice === "scissors" || humanChoice === "paper" && computerChoice === "rock" || humanChoice === "scissors" && computerChoice === "paper") {
+    if (humanChoice === "Rock" && computerChoice === "Scissors" || humanChoice === "Paper" && computerChoice === "Rock" || humanChoice === "Scissors" && computerChoice === "Paper") {
         roundMessage = `You win! ${humanChoice} beats ${computerChoice}.`;
         humanScore += 1;
-    } else if (computerChoice === "rock" && humanChoice === "scissors" || computerChoice === "paper" && humanChoice === "rock" || computerChoice === "scissors" && humanChoice === "paper") {
+    } else if (computerChoice === "Rock" && humanChoice === "Scissors" || computerChoice === "Paper" && humanChoice === "Rock" || computerChoice === "Scissors" && humanChoice === "Paper") {
         roundMessage = `You loose! ${computerChoice} beats ${humanChoice}.`;
         computerScore += 1;
     } else {
