@@ -51,7 +51,7 @@ The problem here is really a sub-problem. How do you prompt the user to enter a 
 ## Step 4: Declare the players score variables
 This is as simpole as it gets. Literally declare two variables, `humanScore` and `computerScore` and initialize them with a value of `0`. 
 
-## Step 5: Write teh logic to play a single round
+## Step 5: Write the logic to play a single round
 1. Understand the problem
     - Write a function that takes human and computer choices as arguments, plays a single round of "rock, paper, scissors", increments the round winners score and logs a winner announcement.
 2. Plan
@@ -80,6 +80,32 @@ This is as simpole as it gets. Literally declare two variables, `humanScore` and
             `computerScore` equals `computerScore` plus `1`
         else `roundMessage` equals "It's a tie! You both chose `humanChoice`."
         - output `roundMessage` to the console
+
+## Step 6: Write teh logic to play the entire game
+1. Undertand the prolem
+    - A human player plays 5 rounds of rock, paper, scissors against the computer. The score is tracked and a winner is declared at the end of the five rounds.
+2. Plan
+    - Does the game have a user interface?
+         - No, the game is played in the console and the built uses the browsers built in prompt and dialogue boxes, along with the console for input and output.
+    - What input will the program have?
+        - The only input is the users choice of Rock, Paper, or Scissors in each round of play.
+    - What's the desired output?
+        - After each round of play, a message indicating the result of the round (win, loose or draw) and the current score.
+        - At the end of the game (5 rounds) indicate the winner, or a tie.
+    - Given the inputs, what are teh sptes necessary to return the desired out put. 
+        A this stage most of the program has been built. Since we have not coverd loops, I will use recursion. I will then create the same with a for loop. 
+        - create a global variable called `roundCount` of type number and set it equal to `0`
+        - Create a function `playGame` which
+            - increment the round counter by one
+            - call `playRound`
+                - call `getHumanChoice` and `getComputerChoice`
+                - determine a winner or tie, increment the score accordingly and output a message.
+            - if roundCount is less than 6
+                Call `playGame`
+                Otherwise return the score and declare a winner, or a tie.
+3. Divide and conquer
+Things have already been broken down into smaller problems. I'm simply going to tackle `playGame`. 
+            
 
 
 

@@ -3,6 +3,7 @@
 // Initialize Global Variables to track player and computer scores
 let humanScore = 0;
 let computerScore = 0;
+let roundCount = 0;
 
 
 // Randomly generate the computer selection of Rock, Paper or Scissors
@@ -32,20 +33,43 @@ function playRound(humanChoice, computerChoice){
     // Declare variable `roundMessage` of type String and empty.
     let roundMessage = "";
 
+    // Increment the round count by one
+    roundCount += 1;
+
     // Outline conditions for the human winner, computer winner and a tie and pass the message to roundMessage.
     if (humanChoice === "Rock" && computerChoice === "Scissors" || humanChoice === "Paper" && computerChoice === "Rock" || humanChoice === "Scissors" && computerChoice === "Paper") {
-        roundMessage = `You win! ${humanChoice} beats ${computerChoice}.`;
+        roundMessage = `You win the round! ${humanChoice} beats ${computerChoice}.`;
         humanScore += 1;
     } else if (computerChoice === "Rock" && humanChoice === "Scissors" || computerChoice === "Paper" && humanChoice === "Rock" || computerChoice === "Scissors" && humanChoice === "Paper") {
-        roundMessage = `You loose! ${computerChoice} beats ${humanChoice}.`;
+        roundMessage = `You loose the round! ${computerChoice} beats ${humanChoice}.`;
         computerScore += 1;
     } else {
         roundMessage = `It's a tie! You both chose ${humanChoice}`;
     }
 
-    // Output the message to the console
+    // Output the message to the console after each round.
     console.log(roundMessage);
-    console.log(`You: ${humanScore}, Computer: ${computerScore}`);
+    if (roundCount < 5){
+        console.log(`The score after round ${roundCount}: You - ${humanScore}, Computer - ${computerScore}`);
+    }
 }
 
+// Play five rounds of Rock, Paper, Scissors. Output the final score and declare the winner, or a tie.
 
+function playGame(){
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
+    playRound(humanChoice, computerChoice);
+    if (roundCount < 5){
+        playGame();
+    } else {
+        console.log(`The final score after ${roundCount} rounds: You - ${humanScore}, Computer - ${computerScore}`);
+        if (humanScore > computerScore){
+            console.log('Congratulations! You win!!');
+        } else if (computerScore > humanScore){
+            console.log(`Tough break, you loose :(`)
+        } else {
+            console.log(`Great battle, it finished in a tie!`)
+        }
+    }
+}
