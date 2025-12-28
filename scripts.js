@@ -8,20 +8,20 @@ function getComputerChoice(){
     let computerChoice ="";
     let randomNum = Math.random();
     if (randomNum < 1/3){
-        computerChoice = "rock";
+        computerChoice = "Rock";
     } else if (randomNum < 2/3) {
-        computerChoice = "paper";
+        computerChoice = "Paper";
     } else {
-        computerChoice = "scissors";
+        computerChoice = "Scissors";
     }
 
     return(computerChoice);
 }
 
 function getHumanChoice(){
-    let humanChoice = prompt("Please enter your choice—rock, paper, or scissors: ");
+    let humanChoice = prompt("Please enter your choice—Rock, Paper, or Scissors: ");
     
-    return(humanChoice);
+    return(humanChoice[0].toUpperCase().concat(humanChoice.slice(1).toLowerCase()));
 }
 
 // Call function `playRound` with two arguments `humanChoice` and `computerChoice` representing the choice each player makes in a game of rock, paper, scissors.
