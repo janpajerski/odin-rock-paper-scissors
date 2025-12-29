@@ -1,11 +1,12 @@
 "use strict";
 
-// Initialize Global Variables to track player and computer scores
+/* Game of rock, paper, scissors played between a human user and the computer
+   The game is 5 rounds long, after which a winner or tie is declared. */
+
 let humanScore = 0;
 let computerScore = 0;
 let roundCount = 0;
 
-// Randomly generate the computer selection of Rock, Paper or Scissors
 function getComputerChoice() {
   let computerChoice = "";
   let randomNum = Math.random();
@@ -20,8 +21,6 @@ function getComputerChoice() {
   return computerChoice;
 }
 
-// Get the players selection of Rock, Paper, or Scissors. The player input is 
-// case insensitive; however, the assumption is that the input is correctly spelled.
 function getHumanChoice() {
   let humanChoice = prompt(
     "Please enter your choice—Rock, Paper, or Scissors: "
@@ -29,20 +28,14 @@ function getHumanChoice() {
 
   return humanChoice[0]
     .toUpperCase()
-    .concat(humanChoice.slice(1).toLowerCase());
+    .concat(humanChoice.slice(1).toLowerCase()); // Make input case insensitive
 }
 
-// Play one round of "Rock, Paper, Scissors" with `humanChoice` and `computerChoice`
-// representing the choice each players choice.
 function playRound(humanChoice, computerChoice) {
-  // Declare variable `roundMessage` of type String and empty.
   let roundMessage = "";
-
-  // Increment the round count by one
   roundCount += 1;
 
-  // Outline conditions for the human winner, computer winner and a tie and pass
-  // the message to roundMessage.
+  // Determine the round winner, or a tie
   if (
     (humanChoice === "Rock" && computerChoice === "Scissors") ||
     (humanChoice === "Paper" && computerChoice === "Rock") ||
@@ -61,8 +54,8 @@ function playRound(humanChoice, computerChoice) {
     roundMessage = `It's a tie! You both chose ${humanChoice}`;
   }
 
-  // Output the message to the console after each round.
   console.log(roundMessage);
+  // The result after the 5th round is declared in the playGame function.
   if (roundCount < 5) {
     console.log(
       `The score after round ${roundCount}: You - ${humanScore}, Computer - ${computerScore}`
@@ -70,8 +63,7 @@ function playRound(humanChoice, computerChoice) {
   }
 }
 
-// Using recursion, play five rounds of Rock, Paper, Scissors. Output the final
-// score and declare the winner, or a tie.
+// Using recursion, play five rounds of the game and output the result
 
 /* function playGame(){
     const humanChoice = getHumanChoice();
@@ -91,19 +83,15 @@ function playRound(humanChoice, computerChoice) {
     }
 } */
 
-// Using a for loop, as shown in the problem solving Fizz Buss example, play 
-// five rounds of Rock, Paper, Scissors. Output the final score and declare the 
-// winner, or a tie.
+// Using a for loop, play five rounds of the game and output the result
 
 function playGame() {
-  // Play five rounds of Rock, Paper, Scissors
   for (let i = 1; i <= 5; i++) {
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice);
   }
 
-  // Ouput the final score and declare a winner, or tie, after all five rounds
   console.log(
     `The final score after ${roundCount} rounds: You - ${humanScore}, Computer - ${computerScore}`
   );
